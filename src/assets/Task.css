@@ -1,0 +1,166 @@
+.task-input {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 50%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 2px solid #4caf50;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.input-field::placeholder {
+    color: #aaa;
+}
+
+.input-icon {
+    padding: 10px;
+    color: #4caf50;
+    font-size: 20px;
+    background-color: white;
+}
+
+.input-container:hover .input-icon {
+    color: #81c784;
+}
+
+.input-field:focus {
+    background-color: #f1f8e9;
+}
+
+.guardar-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.guardar-button:hover {
+    background-color: #45a049;
+}
+
+.guardar-button svg {
+    font-size: 18px;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #4caf50;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.icon-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.task-icon {
+    font-size: 30px;
+}
+
+.task-name {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #f0f0f0;
+}
+
+.edit-button {
+    background-color: blue;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: darkblue;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.edit-button svg,
+.delete-button svg {
+    font-size: 16px;
+}
